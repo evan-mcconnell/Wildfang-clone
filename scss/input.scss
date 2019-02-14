@@ -1,0 +1,159 @@
+//variable
+$oswald: 'Oswald', sans-serif;
+$green: #38ca73;
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin head-font($font-size: 12px) {
+  font-family: $oswald;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: $font-size;
+}
+
+@mixin img-card {
+  text-align: center;
+  width: 84%;
+  margin: 0 8%;
+  margin-top: 5px;
+  img {
+    align-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .text-box {
+    text-align: center;
+    background-color: transparentize(black, 0.3);
+    height: 40%;
+    position: relative;
+    bottom: 350px;
+    color: white;
+    font-family: $oswald;
+    padding: 20px 90px;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: impact;
+      letter-spacing: 4px;
+      font-size: 80px;
+    }
+    p {
+      font-family: 'Questrial', sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      margin: 10px;
+    }
+    a {
+      position: relative;
+      text-transform: uppercase;
+      font-family: impact;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .lnr {
+      font: {
+        size: 30px;
+        weight: bolder;
+      }
+      margin-left: 10px;
+    }
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  p {
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+  }
+}
+
+header {
+  @include flex-row;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 50px;
+  height: 25px;
+  @include head-font;
+  #line2, #line3 {
+    display: none;
+  }
+  .right-head {
+    @include flex-row;
+    width: 225px;
+    justify-content: space-between;
+    a {
+      color: white;
+      text-decoration: none;
+      @include head-font;
+    }
+  }
+  .bag {
+    @include flex-row;
+    justify-content: space-between;
+    width: 53px;
+    .vl {
+      border-left: 1px solid white;
+      height: 10px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 3px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+} // end of header
+
+.logo {
+  height: 66px;
+  text-align: center;
+  padding: 10px;
+  img {
+    width: 300px;
+    height: auto;
+  }
+}// end logo
+
+nav {
+  @include flex-row;
+  @include head-font(16px);
+  justify-content: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 34px;
+  a {
+    width: (80% / 6);
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: $green;
+    }
+  }
+ .search a {
+    opacity: 0.5;
+  }
+}// end of nav
+
+section {
+  @include img-card;
+
+}//end of section
+
+
+
+//end
