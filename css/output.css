@@ -122,4 +122,92 @@ section {
       font-weight: bolder;
       margin-left: 10px; }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  .cards .leftCard {
+    text-align: center;
+    width: 84%;
+    margin: 0 8%;
+    margin-top: 5px; }
+    .cards .leftCard img {
+      align-content: center;
+      position: relative;
+      width: 100%; }
+    .cards .leftCard .text-box {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 40%;
+      position: relative;
+      bottom: 350px;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      padding: 20px 90px; }
+      .cards .leftCard .text-box h2 {
+        text-transform: uppercase;
+        font-family: impact;
+        letter-spacing: 4px;
+        font-size: 80px; }
+      .cards .leftCard .text-box p {
+        font-family: 'Questrial', sans-serif;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 10px; }
+      .cards .leftCard .text-box a {
+        position: relative;
+        text-transform: uppercase;
+        font-family: impact;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: bold; }
+      .cards .leftCard .text-box .lnr {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 10px; }
+  .cards .rightCard {
+    text-align: center;
+    width: 84%;
+    margin: 0 8%;
+    margin-top: 5px; }
+    .cards .rightCard img {
+      align-content: center;
+      position: relative;
+      width: 100%; }
+    .cards .rightCard .text-box {
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 40%;
+      position: relative;
+      bottom: 350px;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      padding: 20px 90px; }
+      .cards .rightCard .text-box h2 {
+        text-transform: uppercase;
+        font-family: impact;
+        letter-spacing: 4px;
+        font-size: 80px; }
+      .cards .rightCard .text-box p {
+        font-family: 'Questrial', sans-serif;
+        font-size: 25px;
+        letter-spacing: 2px;
+        margin: 10px; }
+      .cards .rightCard .text-box a {
+        position: relative;
+        text-transform: uppercase;
+        font-family: impact;
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: bold; }
+      .cards .rightCard .text-box .lnr {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-left: 10px; }
+
 /*# sourceMappingURL=output.css.map */

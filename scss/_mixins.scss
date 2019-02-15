@@ -1,0 +1,65 @@
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin head-font($font-size: 12px) {
+  font-family: $oswald;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: $font-size;
+}
+
+@mixin img-card {
+  text-align: center;
+  width: 84%;
+  margin: 0 8%;
+  margin-top: 5px;
+  img {
+    align-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .text-box {
+    text-align: center;
+    background-color: transparentize(black, 0.3);
+    height: 40%;
+    position: relative;
+    bottom: 350px;
+    color: white;
+    font-family: $oswald;
+    padding: 20px 90px;
+
+    h2 {
+      text-transform: uppercase;
+      font-family: impact;
+      letter-spacing: 4px;
+      font-size: 80px;
+    }
+    p {
+      font-family: 'Questrial', sans-serif;
+      font-size: 25px;
+      letter-spacing: 2px;
+      margin: 10px;
+    }
+    a {
+      position: relative;
+      text-transform: uppercase;
+      font-family: impact;
+      color: white;
+      text-decoration: none;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    .lnr {
+      font: {
+        size: 30px;
+        weight: bolder;
+      }
+      margin-left: 10px;
+    }
+  }
+}

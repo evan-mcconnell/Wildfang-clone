@@ -1,3 +1,6 @@
+@import 'mixins';
+@import 'variables';
+
 //variable
 $oswald: 'Oswald', sans-serif;
 $green: #38ca73;
@@ -154,6 +157,16 @@ section {
 
 }//end of section
 
+.cards {
+  @include flex-row;
+  justify-content: space-between;
 
+  .leftCard {
+     @include img-card;
+  }
+  .rightCard {
+    @include img-card;
+  }
+}
 
 //end
